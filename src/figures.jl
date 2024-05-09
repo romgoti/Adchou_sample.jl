@@ -1,3 +1,7 @@
+"""
+PLOTTING FUNCTIONS 
+"""
+
 using Adchou_sample
 using Plots
 
