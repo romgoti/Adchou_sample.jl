@@ -1,5 +1,4 @@
 
-export func
 
 """
 solve_2states(T,Aprod,2,γ,α,δ,ρ,K,z1,λ1,λ2,Δ ,print_ind,amin,amax,maxit,crit)
@@ -542,5 +541,3 @@ function solve_FP(T,L,i_fix,a,da)
     return OrderedDict(:KS => KS, :g => g)
 end
 
-
-end
