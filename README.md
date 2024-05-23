@@ -18,9 +18,9 @@ The paper presents continous-time methods for solving the steady-state of hetero
 
 Step 1: Download the package and open it as working directory in your favorite code editor (VSCode)
 
-Step 2: Open Julia REPL and add the package 'add https://github.com/romgoti/Adchou_sample.jl' from the package prompt (type ])
+Step 2: Open Julia REPL and add the package by running 'add https://github.com/romgoti/Adchou_sample.jl' from the package prompt (type ])
 
-Step 3: In the main julia prompt 'using Adchou_sample' and then run figure7() or figure10() to solve the model and plot the figures. You can also run the file 'figures/run.jl' to do the analysis manually.
+Step 3: In the main julia prompt, run 'using Adchou_sample' and then the functions Adchou_sample.figure7() or Adchou_sample.figure10() to solve the model and plot the figures. You can also run the file 'figures/run.jl' to do the analysis manually.
 
 
 # Results description
