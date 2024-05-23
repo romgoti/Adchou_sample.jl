@@ -12,17 +12,17 @@ function figure7()
     m2 = solve_2states(T,.15)
 
     begin
-        plot(range(0,8,T), [m1[:V][:,1] m1[:cf][:,1] m1[:sf][:,1] m1[:g][:,1]],line=(2,:blue), layout = 4,
+        plot(range(0,4,Int(T/2)), [m1[:V][1:Int(T/2),1] m1[:cf][1:Int(T/2),1] m1[:sf][1:Int(T/2),1] m1[:g][1:Int(T/2),1]],line=(2,:blue), layout = 4,
         title = ["Value Functions" "Consumption Functions" "Saving Functions" "Stationary Distributions" ], 
         label = ["V1(a)" "C1(a)" "S1(a)" "g1(a)"])
-        plot!(range(0,8,T), [m1[:V][:,2] m1[:cf][:,2] m1[:sf][:,2] m1[:g][:,2]],line=(2,:red), 
+        plot!(range(0,4,Int(T/2)), [m1[:V][1:Int(T/2),2] m1[:cf][1:Int(T/2),2] m1[:sf][1:Int(T/2),2] m1[:g][1:Int(T/2),2]],line=(2,:red), 
         label = ["V2(a)" "C2(a)" "S2(a)" "g2(a)"])
-        plot!(range(0,8,T), [m2[:V][:,1] m2[:cf][:,1] m2[:sf][:,1] m2[:g][:,1]],line=(2,:blue,:dash), 
+        plot!(range(0,4,Int(T/2)), [m2[:V][1:Int(T/2),1] m2[:cf][1:Int(T/2),1] m2[:sf][1:Int(T/2),1] m2[:g][1:Int(T/2),1]],line=(2,:blue,:dash), 
         label = ["V1(a)" "C1(a)" "S1(a)" "g1(a)"])
-        plot!(range(0,8,T), [m2[:V][:,2] m2[:cf][:,2] m2[:sf][:,2] m2[:g][:,2]],line=(2,:red,:dash), 
+        plot!(range(0,4,Int(T/2)), [m2[:V][1:Int(T/2),2] m2[:cf][1:Int(T/2),2] m2[:sf][1:Int(T/2),2] m2[:g][1:Int(T/2),2]],line=(2,:red,:dash), 
         label = ["V2(a)" "C2(a)" "S2(a)" "g2(a)"])
         xlabel!("Net assets position")
-    end    
+    end
 end
 
 function figure10()
